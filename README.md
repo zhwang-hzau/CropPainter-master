@@ -59,4 +59,5 @@ Based on Windows10, we provide a software: CropPainter visualizer
 Without deep learning environment, users are able to operate the software to visualize phenotypic information for four crops. 
 By entering trait values, crop images can be generated in real time. The software also supports inputting batch trait information (excel file) to generate crop images in batch.
 The executable application can be downloaded from [here](https://drive.google.com/file/d/1k1iybVKWfwLZBfQ49sktsv-FbLJWwiDz/view?usp=sharing). 
+
 Please note: Older CPU may cause stuck when running this application. We ran it successfully on intel Core i5-6500 (4 cores and 4 threads at 3.2GHz) and AMD Ryzen 5 3500X (6 cores and 6 threads at 3.6GHz), so we recommend using a higher performance CPU.
