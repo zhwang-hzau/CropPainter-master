@@ -1,0 +1,36 @@
+CONFIG_NAME: '3stages'
+
+DATASET_NAME: 'Panicle'
+EMBEDDING_TYPE: 'cnn-rnn'
+DATA_DIR: '../data/Panicle'
+GPU_ID: '0'
+WORKERS: 0
+
+
+TREE:
+    BRANCH_NUM: 3
+
+
+TRAIN:
+    FLAG: True
+    NET_G: ''
+    NET_D: ''
+    BATCH_SIZE: 12 # 24
+    MAX_EPOCH: 200 # 400
+    SNAPSHOT_INTERVAL: 2000
+    DISCRIMINATOR_LR: 0.0002
+    GENERATOR_LR: 0.0002
+    COEFF:
+      UNCOND_LOSS: 1.0
+
+
+GAN:
+    EMBEDDING_DIM:  18 # traits dim
+    DF_DIM: 64
+    GF_DIM: 64
+    Z_DIM:  25 #0 #50
+    R_NUM: 2
+    B_CONDITION: True
+
+TEXT:
+    DIMENSION: 1024

@@ -1,0 +1,29 @@
+CONFIG_NAME: '3stages'
+
+DATASET_NAME: 'Cotton'
+EMBEDDING_TYPE: 'cnn-rnn'
+DATA_DIR: '../data/Cotton'
+GPU_ID: '0'
+WORKERS: 0  # 4
+
+TREE:
+    BRANCH_NUM: 3
+
+
+TEST:
+    B_EXAMPLE: False
+
+
+TRAIN:
+    FLAG: False
+    NET_G: '../models/cotton_default/Model/netG_50000.pth'
+    BATCH_SIZE: 1
+
+
+GAN:
+    EMBEDDING_DIM: 18 # traits dim
+    DF_DIM: 64
+    GF_DIM: 64
+    Z_DIM: 25
+    R_NUM: 2
+    B_CONDITION: True

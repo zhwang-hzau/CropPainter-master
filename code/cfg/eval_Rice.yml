@@ -1,0 +1,29 @@
+CONFIG_NAME: '3stages'
+
+DATASET_NAME: 'Rice'
+EMBEDDING_TYPE: 'cnn-rnn'
+DATA_DIR: '../data/Rice'
+GPU_ID: '0'
+WORKERS: 0  # 4
+
+TREE:
+    BRANCH_NUM: 3
+
+
+TEST:
+    B_EXAMPLE: False
+
+
+TRAIN:
+    FLAG: False
+    NET_G: '../models/rice_default/Model/netG_156000.pth'
+    BATCH_SIZE: 1
+
+
+GAN:
+    EMBEDDING_DIM: 16 # traits dim
+    DF_DIM: 64
+    GF_DIM: 64
+    Z_DIM: 25
+    R_NUM: 2
+    B_CONDITION: True
